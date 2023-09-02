@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+  
+  }
+  
+  .card-wrapper {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    width: 90vw;
+    justify-content: center;
+  
+  }
+  
+  .MuiList-root {
+    background-color: black;
+  }
+  
+  .filter-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+  
+  }
+  
+  .logo {
+    width: 100px;
+    cursor: pointer;
+  
+  }
+  
+  
+  .service {
+    margin: 20px;
+    color: #fa2828;
+  }
+  
+  .App {
+    background-color: rgb(42, 39, 39);
+    min-height: 100vh;
+  
+  }
+  
+  .registrationForm {
+    background-color: rgb(42, 39, 39);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  .headingDetail {
+    text-align: center;
+   
+    font-size: 20px;
+    color: #fa2828;
+  }
+  
+  .headingDetail h2 {
+    font-weight: 800;
+  }
+  
+  
+  
+  .back {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s, color 0.2s;
+  }
+  
+  .back:hover {
+  
+    color: #fa2828;
+    transform: translateX(-5px);
+  
+  }
+  
+  .detailContainer {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .technician-details-container {
+    padding: 20px;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    /* Make the container take up the full viewport height */
+  }
+  
+  .details-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  
+  .image-wrapper {
+    width: 20vw;
+    margin: 0 20px;
+  
+  }
+  
+  
+  .info-wrapper {
+    width: 20vw;
+  }
+  
+  @media (max-width: 814px) {
+    .info-wrapper {
+      width: 30vw;
+    }
+  }
+  
+  @media (max-width: 558px) {
+    .info-wrapper {
+      width: 40vw;
+    }
+  }
+  
+  @media (max-width: 416px) {
+    .info-wrapper {
+      width: 50vw;
+    }
+  }
+  
+  @media (max-width: 685px) {
+    .image-wrapper {
+      width: 25vw;
+    }
+  }
+  
+  @media (max-width: 592px) {
+    .image-wrapper {
+      width: 28vw;
+    }
+  }
+  
+  @media (max-width: 518px) {
+    .image-wrapper {
+      width: 32vw;
+    }
+  }
+  
+  .info-wrapper h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #fa2828;
+    font-weight: 900;
+  }
+  
+  .info-wrapper h3 span {
+    margin: 0;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 600;
+  }
+  
+  .info-wrapper p {
+    margin: 8px 0;
+    font-size: 1rem;
+    color: #fa2828;
+    font-weight: 900;
+  }
+  
+  .info-wrapper p span {
+    font-weight: 100;
+    color: white;
+  }

@@ -1,0 +1,299 @@
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.accountpara{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.accountpara:hover{
+font-weight: bolder;
+color: rgb(218, 11, 11);
+cursor: pointer;
+}
+.link{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 40px;  
+    color: white;
+/* border-bottom-color: red; */
+}
+
+.link:hover{
+    cursor: pointer;
+color: rgb(238, 18, 18);
+font-weight: bolder;
+}
+
+
+/* ======================signup styling=============================== */
+.signupheading{
+    color: white;
+}
+
+.signupheading:hover{
+    color: rgb(204, 6, 6);
+}
+.container 
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #000;
+  position: relative;
+  /* z-index: -1; */
+  opacity: 0.2;
+}
+section 
+{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+section::before 
+{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#000,rgb(223, 10, 2),#000);
+  animation: animate 5s linear infinite;
+}
+@keyframes animate 
+{
+  0%
+  {
+    transform: translateY(-100%);
+  }
+  100%
+  {
+    transform: translateY(100%);
+  }
+}
+section span 
+{
+  position: relative;
+  display: block;
+  width: calc(6.25vw - 2px);
+  height: calc(6.25vw - 2px);
+  background: #181818;
+  z-index: 2;
+  transition: 1.5s;
+}
+section span:hover 
+{
+  background: rgb(247, 7, 7);
+  transition: 0s;
+}
+
+
+@media (max-width: 900px)
+{
+  section span 
+  {
+    width: calc(10vw - 2px);
+    height: calc(10vw - 2px);
+  }
+}
+@media (max-width: 600px)
+{
+  section span 
+  {
+    width: calc(20vw - 2px);
+    height: calc(20vw - 2px);
+  }
+}
+
+.box{
+    position: absolute;
+    border: 5px solid red;
+    border-radius: 12px;
+    width: 100%;
+    top: 115px;
+    z-index: 1;
+    /* left: 20px; */
+    /* height: 190px; */
+}
+
+.signupinput{
+    margin: 10px;
+    line-height: 40px;
+    border-radius: 14px;
+    background-color: #181818;
+    border-color: red;
+    color: white;
+}
+.signupinput:hover{
+    color: rgb(240, 17, 17);
+    background-color: #302f2f;
+    font-weight: bolder;
+}
+
+
+@media(min-width:1024px){
+    .signupinput{
+        line-height: 65px;;
+        width: 40%;
+        font-size: 30px;
+    }
+    .signupheading{
+        font-size: 40px;
+    }
+    .accountpara{
+        font-size: 24px;    
+    }
+    .link{
+        font-size: 20px;
+    }}
+/* =================signup border animation=============} */
+
+span {
+    position: absolute;
+    border-radius: 100vmax;
+  } 
+  
+  .top {
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 5px;
+    background: linear-gradient(
+      90deg,
+      transparent 50%,
+      rgba(208, 223, 6, 0.5),
+      rgb(73, 214, 7)
+    );
+  }
+  
+  .bottom {
+    right: 0;
+    bottom: 0;
+    height: 5px;
+    background: linear-gradient(
+      90deg,
+      rgb(40, 238, 5),
+      rgba(236, 233, 27, 0.5),
+      transparent 50%
+    );
+  }
+  
+  .right {
+    top: 0;
+    right: 0;
+    width: 5px;
+    height: 0;
+    background: linear-gradient(
+      180deg,
+      transparent 30%,
+      rgba(255, 255, 255, 0.5),
+      rgb(237, 243, 243)
+    );
+  }
+  
+  .left {
+    left: 0;
+    bottom: 0;
+    width: 5px;
+    height: 0;
+    background: linear-gradient(
+      180deg,
+      rgb(235, 235, 228),
+      rgba(179, 179, 167, 0.5),
+      transparent 70%
+    );
+  }
+  
+  .top {
+    animation: animateTop 3s ease-in-out infinite;
+  }
+  
+  .bottom {
+    animation: animateBottom 3s ease-in-out infinite;
+  }
+  
+  .right {
+    animation: animateRight 3s ease-in-out infinite;
+  }
+  
+  .left {
+    animation: animateLeft 3s ease-in-out infinite;
+  }
+  
+  @keyframes animateTop {
+    25% {
+      width: 100%;
+      opacity: 1;
+    }
+  
+    30%,
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes animateBottom {
+    0%,
+    50% {
+      opacity: 0;
+      width: 0;
+    }
+  
+    75% {
+      opacity: 1;
+      width: 100%;
+    }
+  
+    76%,
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes animateRight {
+    0%,
+    25% {
+      opacity: 0;
+      height: 0;
+    }
+  
+    50% {
+      opacity: 1;
+      height: 100%;
+    }
+  
+    55%,
+    100% {
+      height: 100%;
+      opacity: 0;
+    }
+  }
+  
+  @keyframes animateLeft {
+    0%,
+    75% {
+      opacity: 0;
+      bottom: 0;
+      height: 0;
+    }
+  
+    100% {
+      opacity: 1;
+      height: 100%;
+    }
+  }
+  
+
